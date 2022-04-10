@@ -8,7 +8,7 @@
 
 | 단계                                    | 완료여부 | 날짜 |
 | --------------------------------------- | -------- | ---- |
-| [재귀](https://www.acmicpc.net/step/19)  | [x] | 2022/04/10 (일) |
-| [브루트 포스](https://www.acmicpc.net/step/22) | [ ] |  |
+| [재귀](https://www.acmicpc.net/step/19)  | :white_check_mark: | 2022/04/10 (일) |
+| [브루트 포스](https://www.acmicpc.net/step/22) | :white_large_square: |  |
 
 
