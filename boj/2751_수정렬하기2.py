@@ -1,35 +1,40 @@
 import sys
-
 input = sys.stdin.readline
+
 N = int(input())
 arr = [int(input()) for _ in range(N)]
 
 
-def quick_sort(arr: list, begin: int, end: int) -> None:
-    if begin < end:
-        P = partition(arr, begin, end)
-        quick_sort(arr, begin, P - 1)
-        quick_sort(arr, P + 1, end)
+# merge sort
+def merge(left: list, right: list) -> list:
+    result = []
+    result_size = len(left) + len(right)
+    left_idx = 0
+    right_idx = 0
+    while left_idx < len(left) and right_idx < len(right):
+        if left[left_idx] < right[right_idx]:
+            result.append(left[left_idx])
+            left_idx += 1
+        else:
+            result.append(right[right_idx])
+            right_idx += 1
+    result.extend(left[left_idx:])
+    result.extend(right[right_idx:])
+    return result
 
 
-def partition(arr: list, begin: int, end: int) -> int:
-    pivot = (begin + end) // 2
-    L = begin
-    R = end
-    while L < R:
-        while arr[L] < arr[pivot] and L < R:
-            L += 1
-        while arr[pivot] <= arr[R] and L < R:
-            R -= 1
-        if L < R:
-            if L == pivot:
-                pivot = R
-            arr[L], arr[R] = arr[R], arr[L]
-    arr[pivot], arr[R] = arr[R], arr[pivot]
-    return R
+def merge_sort(arr: list) -> list:
+    if len(arr) == 1:
+        return arr
+    mid = len(arr) // 2
+    left = arr[:mid]
+    right = arr[mid:]
+
+    left = merge_sort(left)
+    right = merge_sort(right)
+    return merge(left, right)
 
 
-quick_sort(arr, 0, N - 1)
-
-for num in arr:
+sorted_arr = merge_sort(arr)
+for num in sorted_arr:
     print(num)
