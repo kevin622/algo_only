@@ -5,7 +5,7 @@ arr = [random.randint(0, 100) for _ in range(10)]
 print(f'before: {arr}')
 
 
-def counting_sort():
+def counting_sort(arr: list) -> list:
     max_val = max(arr)
     # counting 배열 만들기
     count_arr = [0] * (max_val + 1)
@@ -23,5 +23,5 @@ def counting_sort():
     return temp
 
 
-arr = counting_sort()
+arr = counting_sort(arr)
 print(f'after: {arr}')

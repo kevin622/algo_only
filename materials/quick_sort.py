@@ -1,7 +1,7 @@
 # O(n*log(n)) but O(n^2) at worse case
 import random
 
-arr = [random.randint(0, 1000) for _ in range(1000)]
+arr = [random.randint(0, 100) for _ in range(10)]
 
 print(f'before: {arr}')
 
