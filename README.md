@@ -6,10 +6,11 @@
 
 ### [단계별로 풀어보기](https://www.acmicpc.net/step)
 
-| 단계                                        | 완료여부               | 날짜             |
-|-------------------------------------------|--------------------|----------------|
-| [재귀](https://www.acmicpc.net/step/19)     | :white_check_mark: | 2022/04/10 (일) |
-| [브루트 포스](https://www.acmicpc.net/step/22) | :white_check_mark: | 2022/04/11 (월) |
-| [정렬](https://www.acmicpc.net/step/9)      | :white_check_mark: | 2022/04/14 (목) |
+| 단계                                           | 완료여부               | 날짜             |
+|----------------------------------------------|--------------------|----------------|
+| [재귀](https://www.acmicpc.net/step/19)        | :white_check_mark: | 2022/04/10 (일) |
+| [브루트 포스](https://www.acmicpc.net/step/22)    | :white_check_mark: | 2022/04/11 (월) |
+| [정렬](https://www.acmicpc.net/step/9)         | :white_check_mark: | 2022/04/14 (목) |
+| [정수론 및 조합론](https://www.acmicpc.net/step/18) |                    |                |
 
 
