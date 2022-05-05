@@ -14,5 +14,6 @@
 | [정수론 및 조합론](https://www.acmicpc.net/step/18) | :white_check_mark: | 2022/04/21 (목) |
 | [백트래킹](https://www.acmicpc.net/step/34)      | :white_check_mark: | 2022/04/23 (토) |
 | [동적계획법1](https://www.acmicpc.net/step/16)    | :white_check_mark: | 2022/05/04 (수) |
+| [누적합](https://www.acmicpc.net/step/48)       | :white_check_mark: | 2022/05/05 (목) |
 
 
