@@ -15,5 +15,6 @@
 | [백트래킹](https://www.acmicpc.net/step/34)      | :white_check_mark: | 2022/04/23 (토) |
 | [동적계획법1](https://www.acmicpc.net/step/16)    | :white_check_mark: | 2022/05/04 (수) |
 | [누적합](https://www.acmicpc.net/step/48)       | :white_check_mark: | 2022/05/05 (목) |
+| [그리디 알고리즘](https://www.acmicpc.net/step/33)  |                    |                |
 
 
