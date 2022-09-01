@@ -27,6 +27,8 @@
 | [동적계획법과 최단 거리 역추적](https://www.acmicpc.net/step/41) | :white_check_mark: |
 | [트리](https://www.acmicpc.net/step/23)               | :white_check_mark: |
 | [유니온 파인드](https://www.acmicpc.net/step/14)          | :white_check_mark: |
+| [최소신장트리](https://www.acmicpc.net/step/15)           | :white_check_mark: |
+| [트리에서의 동적 계획법](https://www.acmicpc.net/step/21)     | :white_check_mark: |
 
 
 
