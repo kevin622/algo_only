@@ -19,7 +19,7 @@ def main():
     curr_time = -1
     is_waiting = [0, 0, 0, 0]
     while queues[0] or queues[1] or queues[2] or queues[3]:
-        min_time = 1000000000
+        min_time = int(1e9)
         for i in range(4):
             if queues[i]:
                 time = queues[i][0][1]
