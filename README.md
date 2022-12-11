@@ -16,7 +16,7 @@
 | [동적계획법1](https://www.acmicpc.net/step/16)           | :white_check_mark: |
 | [누적합](https://www.acmicpc.net/step/48)              | :white_check_mark: |
 | [그리디 알고리즘](https://www.acmicpc.net/step/33)         | :white_check_mark: |
-| [스택](https://www.acmicpc.net/step/11)               | 보류                 |
+| [스택](https://www.acmicpc.net/step/11)               | :white_check_mark: |
 | [큐, 덱](https://www.acmicpc.net/step/12)             | 보류                 |
 | [이분탐색](https://www.acmicpc.net/step/29)             | :white_check_mark: |
 | [우선순위 큐](https://www.acmicpc.net/step/13)           | :white_check_mark: |
