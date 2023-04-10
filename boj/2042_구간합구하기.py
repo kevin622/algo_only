@@ -6,8 +6,7 @@ class SegmentTree:
     def __init__(self, arr):
         self.arr = arr
         self.arr_len = len(arr)
-        self.tree_len = 2 ** (int(math.log(self.arr_len, 2)) + 2)
-        self.tree = [0] * self.tree_len
+        self.tree = [0] * (2 ** (int(math.log(self.arr_len, 2)) + 2))
         self._create_tree(0, len(arr) - 1)
 
     def _create_tree(self, start: int, end: int, idx: int = 1):

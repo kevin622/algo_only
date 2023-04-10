@@ -30,6 +30,7 @@
 | [최소신장트리](https://www.acmicpc.net/step/15)           | :white_check_mark: |
 | [트리에서의 동적 계획법](https://www.acmicpc.net/step/21)     | :white_check_mark: |
 | [위상정렬](https://www.acmicpc.net/step/25)             |                    |
+| [세그먼트 트리](https://www.acmicpc.net/step/35)          |                    |
 
 
 
