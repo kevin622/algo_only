@@ -2,7 +2,6 @@
 # https://velog.io/@jini_eun/%EB%B0%B1%EC%A4%80-1086%EB%B2%88-%EB%B0%95%EC%84%B1%EC%9B%90-Java-Python
 
 import sys
-import math
 
 '''
 - dp[i][j] : i(비트)번 숫자들을 사용했을 때 나머지가 j(정수)인 경우의 수 (j ≤ K)
@@ -18,6 +17,12 @@ import math
 '''
 
 
+def gcd(a: int, b: int):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
+
+
 def main():
     input = sys.stdin.readline
     N = int(input())
@@ -27,10 +32,10 @@ def main():
     dp[0][0] = 1
 
     next_vals = []
-    for n in range(N):
+    for l in range(N):
         temp = []
-        for k in range(K):
-            temp.append((k * (10 ** (len(str(arr[n]))) % K) + (arr[n] % K)) % K)
+        for j in range(K):
+            temp.append((j * (10 ** (len(str(arr[l]))) % K) + (arr[l] % K)) % K)
         next_vals.append(temp)
 
     for i in range(1 << N):
@@ -38,12 +43,11 @@ def main():
             if i & (1 << l):
                 continue
             for j in range(K):
-                # next_val = (j * (10^(len(arr[l])) % K) + (arr[l] % K)) % K
                 next_val = next_vals[l][j]
                 dp[i | (1 << l)][next_val] += dp[i][j]
     p = dp[(1 << N) - 1][0]
     q = sum(dp[(1 << N) - 1])
-    g = math.gcd(p, q)
+    g = gcd(p, q)
     print(f"{p // g}/{q // g}")
 
 
