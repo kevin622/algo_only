@@ -2,7 +2,8 @@
 import sys
 
 
-def compute_lps(pattern: str, lps: list[int]):
+def compute_lps(pattern: str):
+    lps = [0] * len(pattern)
     length = 0
     idx = 1
     while idx < len(lps):
@@ -16,13 +17,13 @@ def compute_lps(pattern: str, lps: list[int]):
             continue
         lps[idx] = 0
         idx += 1
+    return lps
 
 
 def kmp_search(target: str, pattern: str):
     found_cnt = 0
     found_indices = []
-    lps = [0] * len(pattern)
-    compute_lps(pattern, lps)
+    lps: list[int] = compute_lps(pattern)
 
     target_idx = 0
     pattern_idx = 0
